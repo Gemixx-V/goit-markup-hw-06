@@ -87,10 +87,15 @@
               <textarea name="comment" placeholder="Введите текст" id="comment" rows="8"></textarea>
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="" value="agreement" id="agreement" />
-              <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+              <input type="checkbox" name="agree" id="checkbox" class="checkbox-input" />
+              <label for="checkbox" class="label">
+                <span class="checkbox-text">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a class="checkbox-accent" href="#">Условия договора</a>
+                </span>
+              </label>
             </div>
-            <button type="submit">Отправить</button>
+            <button type="submit" class="submitting-form">Отправить</button>
           </form>
         </div>
       </div>
