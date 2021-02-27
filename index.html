@@ -62,12 +62,12 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-close" data-modal-close>
-            <svg class="icon-close">
+            <svg class="icon-close" width="11" height=":11">
               <use href="./images/sprite.svg#icon-close2"></use>
             </svg>
           </button>
+          <h3 class="form-data">Оставьте свои данные, мы вам перезвоним</h3>
           <form class="form js-speaker-form">
-            <h3 class="form-data">Оставьте свои данные, мы вам перезвоним</h3>
             <div class="form-field">
               <label for="name" class="form-name">Имя</label>
               <input type="text" name="name" id="name" />
@@ -82,13 +82,15 @@
               <label for="email">Почта</label>
               <input type="text" name="email" placeholder="my@mail.com" id="email" />
             </div>
-            <div class="form-field">
+            <div class="form-field form-comment">
               <label for="comment">Комментарий</label>
               <textarea name="comment" placeholder="Введите текст" id="comment" rows="8"></textarea>
             </div>
+            <div class="checkbox">
+              <input type="checkbox" name="" value="agreement" id="agreement" />
+              <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            </div>
             <button type="submit">Отправить</button>
-            <input type="checkbox" name="" value="agreement" id="agreement" />
-            <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
           </form>
         </div>
       </div>
