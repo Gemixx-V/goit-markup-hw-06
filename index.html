@@ -103,6 +103,7 @@
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
             </div>
+
             <div class="form-field form-comment">
               <label for="comment">Комментарий</label>
               <textarea
@@ -113,8 +114,10 @@
                 rows="8"
               ></textarea>
             </div>
+
             <div class="checkbox">
               <input class="checkbox-input" type="checkbox" name="agree" id="checkbox" />
+              <span class="checkbox-icon"></span>
               <label for="checkbox" class="label">
                 <span class="checkbox-text">
                   Соглашаюсь с рассылкой и принимаю
@@ -122,6 +125,7 @@
                 </span>
               </label>
             </div>
+
             <button type="submit" class="submitting-form">Отправить</button>
           </form>
         </div>
@@ -459,7 +463,20 @@
             </li>
           </ul>
         </div>
-        <div class="subscription"></div>
+
+        <div class="subscription">
+          <p class="subscription-text">Подпишитесь на рассылку</p>
+          <form autocomplete="off" class="subscription-form">
+            <input
+              class="subscription-input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              required
+            />
+            <button class="subscription-button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
