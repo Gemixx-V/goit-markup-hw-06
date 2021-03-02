@@ -331,11 +331,11 @@ textarea {
   width: 30px;
   height: 30px;
   padding: 0;
-  background: var(--title-color);
+  background: var(--main-background-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  color: var(--title-text-color);
+  color: #000000;
 }
 
 .icon-close {
@@ -1094,13 +1094,6 @@ textarea {
   border-radius: 4px;
 }
 
-.checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
 .label {
   display: block;
   align-items: center;
@@ -1115,6 +1108,9 @@ textarea {
   border-radius: 2px;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
+}
+.checkbox-icon:hover {
+  border: 2px solid var(--accent-color);
 }
 
 .checkbox-input:checked + .checkbox-icon {
